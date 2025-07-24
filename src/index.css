@@ -2,12 +2,34 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+  --color-bg-color: var(--bg-color);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-card: var(--card-color);
 
-
-* {
-  font-family: 'Inter';
+  --font-inter: 'Inter', sans-serif;
 }
 
-html {
-  background-color: #000;
+@layer base {
+  html {
+    font-family: var(--font-inter);
+  }
 }
+
+:root {
+  --primary-text: #222;
+  --bg-color: #EEE;
+  --primary-color: #2B9AB5;
+  --secondary-color: #01af49;
+  --card-color: #fbfbfb;
+}
+
+.dark {
+  --primary-text: #EEE;
+  --bg-color: #0A0A0A;
+  --card-color: #151515;
+}
+

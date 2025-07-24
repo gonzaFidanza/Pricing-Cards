@@ -26,10 +26,10 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 2,
     title: "Pro",
-    subtitle: "Most popular",
+    subtitle: "Great for professionals",
     price: 19,
     billingCycle: "month",
-    highlight: true,      // highlighted plan
+    highlight: true,     
     features: [
       "5 users",
       "50 GB storage",
@@ -49,7 +49,7 @@ export const pricingPlans: PricingPlan[] = [
       "Unlimited users",
       "1 TB storage",
       "Dedicated account manager",
-      "99.9 % SLA & phone support",
+      "99.9% SLA & phone support",
       "Advanced integrations",
       "Single Sign-On (SSO)",
     ],
